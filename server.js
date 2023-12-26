@@ -33,6 +33,11 @@ app.post('/process-image', async (req, res) => {
 }
 );
 
+app.get('/home' , (req,res) => {
+  return res.status(200).json({
+    Message: "Hi"
+  })
+})
 
 
 app.listen(port, () => {
